@@ -2,8 +2,6 @@ import UserCard from "./components/UserCard/UserCard";
 import { useEffect, useState } from "react";
 
 function App() {
-  const queryParams = new URLSearchParams(window.location.search);
-  const username = queryParams.get("username") || "maxi-schaefer";
 
   const [GithubData, setGithubData] = useState([]);
   const [StyleData, setStyleData] = useState("");
@@ -31,6 +29,8 @@ function App() {
 }
 
   useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const username = queryParams.get("username") || "maxi-schaefer";
     fetchData(username).catch(console.error);
     fetchStyles(username).catch(console.error);
   }, [])
