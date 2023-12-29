@@ -11,7 +11,7 @@ const UserCard = (props) => {
                 <div className='profilePictureWrapper'>
                     <img className='profilePicture' src={data.avatar_url} alt='profilePicture' />
                 </div>
-                <h1 className='profileName'><a href={data.html_url} target='_blank'>{data.login}</a></h1>
+                <h1 className='profileName'><a href={data.html_url} target='_blank' rel="noreferrer">{data.login}</a></h1>
                 <p className='profileDescription'>{data.bio || "No Bio"}</p>
 
                 <ul className='infoList'>
