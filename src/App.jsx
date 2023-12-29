@@ -36,12 +36,14 @@ function App() {
   }, [])
 
   return (
-    <div className="container">
+    <>
       <style>
         {StyleData}
       </style>
-      <UserCard data={GithubData}/>
-    </div>
+      <div className="container">
+        <UserCard data={GithubData}/>
+      </div>
+    </>
   );
 }
 
