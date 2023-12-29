@@ -1,0 +1,78 @@
+.userCardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .userCard {
+        display: flex;
+        width: 650px;
+        height: 450px;
+        background-color: var(--elements);
+        border: var(--border);
+        border-radius: var(--border-radius);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: var(--shadow);
+
+        .profilePictureWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 209px;
+            height: 209px;
+            border-radius: 50%;
+            border: var(--profileBorder);
+
+            .profilePicture {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 5px solid var(--elements);
+            }
+        }
+
+        h1 {
+            margin-bottom: -2px;
+        }
+
+        p {
+            color: var(--font-darker);
+        }
+
+        .infoList {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+
+            li {
+                border: var(--border);
+                border-radius: var(--border-radius);
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                width: 80px;
+                height: 80px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 2.5px;
+                box-shadow: var(--shadow);
+
+                .value {
+                    font-size: 20px;
+                    color: var(--main-color);
+                    margin-bottom: -10px;
+                }
+                .type {
+                    font-size: 15px;
+                    color: var(--font);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+:root {
+  // Colors
+  --main-color: #63b0f7;
+  --bg: #0c0c0c;
+  --elements: #111111;
+  --font: #d4d4d4;
+  --font-darker: #292929;
+
+  // Shadow
+  --shadow: -10px 10px 0px #00000059;
+  
+  // Common Border
+  --border-radius: 12px;
+  --border: 1px solid var(--font-darker);
+
+  // Profile Picture
+  --profileBorder: 6px solid var(--main-color);
+
+  .value {
+    text-shadow: 0px 0px 20px var(--main-color);
+  }
+  .type {
+    text-shadow: 0px 0px 5px var(--font);
+  }
+  h1 {
+    text-shadow: 0px 0px 20px var(--font);
+  }
+  .profilePictureWrapper {
+    box-shadow: 0px 0px 15px var(--main-color);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  overflow-x: hidden;
+  background-color: var(--bg);
+  color: var(--font);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--font);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--elements);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
