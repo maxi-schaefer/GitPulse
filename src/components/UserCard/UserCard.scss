@@ -55,6 +55,7 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                color: var(--primary);
                 display: flex;
                 width: 80px;
                 height: 80px;
@@ -75,4 +76,25 @@
             }
         }
     }
+}
+
+// Responsive
+@media (max-width: 480px) {
+    .userCardContainer {
+
+        .userCard {
+            width: 380px;
+            height: 600px;
+
+            .infoList {
+                display: grid;
+                grid-template-columns: repeat(2, 80px);
+                grid-template-rows: repeat(2, 80px);
+                grid-column-gap: 60px;
+                grid-row-gap: 30px;
+            }
+        }
+
+    }
+
 }

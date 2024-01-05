@@ -1,21 +1,17 @@
+// Colors
 :root {
-  // Colors
-  --main-color: #63b0f7;
-  --default: #8f63f7;
+  --primary: #f76363;
   --bg: #0c0c0c;
   --elements: #111111;
   --font: #d4d4d4;
   --font-darker: #292929;
 
-  // Shadow
   --shadow: -10px 10px 0px #00000059;
   
-  // Common Border
   --border-radius: 12px;
   --border: 1px solid var(--font-darker);
 
-  // Profile Picture
-  --profileBorder: 6px solid var(--main-color);
+  --profileBorder: 6px solid var(--primary);
 }
 
 body {
@@ -42,26 +38,5 @@ a {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--elements);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--primary);
-  border-radius: 12px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
 }
 

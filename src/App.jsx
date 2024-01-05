@@ -30,9 +30,13 @@ function App() {
 
   useEffect(() => {
     const queryParams = new URLSearchParams(window.location.search);
-    const username = queryParams.get("username") || "maxi-schaefer";
-    fetchData(username).catch(console.error);
-    fetchStyles(username).catch(console.error);
+    const username = queryParams.get("username") || null;
+    if(username === null) {
+      window.location.assign("https://github.com/maxi-schaefer/gitpulse");
+    } else {
+      fetchData(username).catch(console.error);
+      fetchStyles(username).catch(console.error);
+    }
   }, [])
 
   return (
