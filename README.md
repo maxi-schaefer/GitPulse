@@ -23,7 +23,7 @@ Example (profile.css):
   --border-radius: 12px;
   --border: 1px solid var(--font-darker);
 
-  --profileBorder: 6px solid var(--main-color);
+  --profileBorder: 6px solid var(--primary);
 }
 ```
 After doing this you need to wait a bit until it updates.
